@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+  font-size: 30px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgb(86, 158, 199);
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(229, 241, 114);
+  box-shadow: 0px 2px 7px rgb(65, 65, 65);
+}
+
+.content {
+  min-height: 700px;
+  margin: 30px 50px;
+  background-color: whitesmoke;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.todo-list {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 7px rgb(65, 65, 65);
+  background-color: rgb(238, 238, 238);
+ 
+}
+
+.todo-item {
+  align-items: center;
+  width: 200px;
+  margin: 0 20px;
+  padding: 30px;
+  border-bottom: rgb(172, 172, 172) 1px solid;
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+}
+
+input[type=checkbox] {
+  width: 25px;
+  height: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.contact-list {
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-card > h3 {
+  text-align: center;
+}
+
+.contact-card > p {
+  font-weight: 300;
+  margin: 5px 0px;
+}
+
+/*PRODUCT SECTION*/
+
+.productList {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.product {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  border-radius: 3px;
+  padding: 0px 10px;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.50);
+  transition: 0.3s;
+  background: linear-gradient(180deg, rgba(255,156,110,1) 0%, rgba(255,255,255,1) 23%, rgba(255,255,255,1) 100%);
+  transform: translateZ(0px);
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
+  height: 300px;
+  z-index: 0;
+}
+
+.product:hover {
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
+  transform: translateZ(0px) scale(1.25);
+  z-index: 1000;
+}
+
+.product p {
+  border-top: 1px solid #858585;
+  padding-top: 5px;
+  width: inherit;
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .productList {
+    width: 800px;
+  }
+}
+
+/*clicker section*/
+.clicker {
+  position: fixed;
+  top: 25%;
+  left: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  box-shadow: 0px 0px 10px grey;
+  border-radius: 3px;
+}
+
+.clicker button {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 3px;
+  
+}
+
+.clicker button:hover {
+  box-shadow: 0px 0px 10px white;
+  cursor: pointer;
+}
