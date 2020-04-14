@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/addons/p5.dom.min.js"></script>
+    <script src="libraries/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+      input {
+        margin-bottom: 50px;
+        display: block;
+      }
+
+      #colors {
+        height: 100px;
+        display: flex;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Color changer</p>
+    <div id="colors">
+      <p>Red: </p>
+      <input type="range" min="0" max="255" id="red">
+      <p>Green: </p>
+      <input type="range" min="0" max="255" id="green">
+      <p>Blue: </p>
+      <input type="range" min="0" max="255" id="blue">
+    </div>
+    <button onclick="clearCanvas()">Clear canvas</button>
+    <p>Size slider</p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  </body>
+</html>
