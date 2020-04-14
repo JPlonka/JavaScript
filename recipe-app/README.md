@@ -1,0 +1,1 @@
+To make this work you need to go to https://www.edamam.com/ and get your APP ID and APP KEY then insert these in App.js file.
