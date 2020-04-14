@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat App</title>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+    <body>
+        <div id="chat">
+            <div id="chatBox">
+                <div class="message">
+                    <div class="top">
+                        <div class="author">Johnny</div>
+                        <div class="date">14:34</div>
+                    </div>
+                    <div class="text">
+                        Halo halo
+                    </div>
+                </div>
+            </div>
+            <div id="inputBox">
+                <form id="mesForm" onsubmit="writeMessage()">
+                    <input id="textInput" type="text" placeholder="Wpisz wiadomość">
+                    <input id="btnInput" type="submit" value="Wyślij">
+                </form>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+        <script src="js/client.js"></script>
+    </body>
+</html>

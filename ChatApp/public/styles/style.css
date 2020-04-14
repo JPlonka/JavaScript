@@ -1,0 +1,27 @@
+#chat {
+    height: 500px;
+    width: 228px;
+}
+
+#chatBox {
+    background-color: darkgray;
+    height: 90%;
+    overflow-y: auto;
+}
+
+#inputBox {
+    height: 10%;
+}
+
+.message {
+    margin: 5px;
+    padding: 5px;
+    background-color: beige;
+    border-radius: 2px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
