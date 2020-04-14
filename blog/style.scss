@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+$color1: rgb(143, 101, 190);
+$color2: rgb(255, 242, 230);
+
+@mixin displayCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 8vh;
+    width: 100%;
+    background-color: $color1;
+    color: $color2;
+    @include displayCenter();
+
+    justify-content: space-around;
+
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 20px;
+    }
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    .line3 {
+        width: 20px;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        .line3 {
+            width: 30px;
+        }
+    }
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    background-color: $color2;
+    margin: 2px;    
+}
+
+.content {
+    min-height: 92vh;
+    width: 100%;
+    background-color: $color2;
+    padding: 10px;
+}
+
+article {
+    padding: 10px;
+    border: 3px solid $color1;
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color1;
+    padding: 5px;
+    .postTitle {
+        font-weight: 600;
+    }
+
+    .postDate {
+        opacity: 0.5;
+    }
+}
+
+.postText {
+    overflow-wrap: break-word;
+}
+
+footer {
+    height: 8vh;
+    width: 100%;
+    background-color: $color1;
+    color: $color2;
+    @include displayCenter();
+}
+
+@media only screen and (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+}
